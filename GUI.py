@@ -60,11 +60,11 @@ geom_choice = st.selectbox(
 
 # Parse selection index for default conditional values
 if "2 holes" in geom_choice:
-    default_t, default_ns, default_a, default_b,default_dc,default_airV,default_holden,default_ds  = 24.0, 2, 0.23, 0.22, 13.37, 2.801, 9, 13.37/np.sqrt(9)
+    default_t, default_ns, default_a, default_b,default_dc,default_airV,default_holden,default_ds  = 24.0, 2, 0.23, 0.22, 13.37, 2.800001, 9, 13.37/np.sqrt(9)
 elif "3 holes" in geom_choice:
-    default_t, default_ns, default_a, default_b,default_dc,default_airV,default_holden,default_ds  = 33.0, 3, 0.38, 0.39,17.14, 2.802, 10, 17.14/np.sqrt(10)
+    default_t, default_ns, default_a, default_b,default_dc,default_airV,default_holden,default_ds  = 33.0, 3, 0.38, 0.39,17.14, 2.800002, 10, 17.14/np.sqrt(10)
 else:
-    default_t, default_ns, default_a, default_b,default_dc,default_airV,default_holden,default_ds  = 42.0, 4, 0.19, 0.33, 10.42, 2.803, 10, 10.42/np.sqrt(10)
+    default_t, default_ns, default_a, default_b,default_dc,default_airV,default_holden,default_ds  = 42.0, 4, 0.19, 0.33, 10.42, 2.800003, 10, 10.42/np.sqrt(10)
 
 # --- Control Parameters Container (Using Sidebar for clean space) ---
 st.sidebar.header("Control Parameters")
