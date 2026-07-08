@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy.io as sio
+
 
 # Set page configuration to wide layout for side-by-side plots
 st.set_page_config(layout="wide", page_title="Metasurface Dashboard")
