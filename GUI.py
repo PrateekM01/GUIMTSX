@@ -76,7 +76,7 @@ d_central_mm = st.sidebar.slider("Center Hole Dia (mm):", 3.0, 25.0, default_dc,
 hole_den_v = st.sidebar.slider("side hole dia factor:", 2, 15, default_holden, step=1)
 
 if hole_den_v != default_holden:
-    st.sidebar.warning("Hole Denominator changed from default; side hole diameter will be recalculated.")
+    st.sidebar.warning("Hole dia factor(metacond) changed from default; side hole diameter will be recalculated.")
     d_sidehole_mm = st.sidebar.slider("Side Hole(s) Dia (mm):", 3.0, 25.0, (1.0 / np.sqrt(hole_den_v)) * d_central_mm, step=0.1)
 else:
     d_sidehole_mm = st.sidebar.slider("Side Hole(s) Dia (mm):", 3.0, 25.0, default_ds, step=0.1)
