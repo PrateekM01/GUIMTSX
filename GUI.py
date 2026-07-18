@@ -30,8 +30,8 @@ def acoustic_impedance_mf(sigma, d0, t, f, rho, zf, v_a, m, s, eta):
             ZH.append(Zh_R + Zh_I)
             
         ZH = np.array(ZH)
-        #ZH_eff_1 = np.sum(sigma / ZH)
-        ZH_eff_1 = np.sum(sigma[-1] / ZH[-1])
+        ZH_eff_1 = np.sum(sigma / ZH)
+        #ZH_eff_1 = np.sum(sigma[-1] / ZH[-1])
         zeff = 1.0 / ZH_eff_1
         
         # Panel Mechanical Impedance
